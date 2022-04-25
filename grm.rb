@@ -1,7 +1,7 @@
 
 class Grm < Formula
-    desc    "Minimalist npm registry manager (Use like Nrm)"
-    homepage    "https://github.com/modern-magic/grm"
+    desc  "Minimalist npm registry manager (Use like Nrm)"
+    homepage  "https://github.com/modern-magic/grm"
     version "0.4.0"
 
     on_macos do 
@@ -22,3 +22,4 @@ class Grm < Formula
             end
         end
     end
+end
