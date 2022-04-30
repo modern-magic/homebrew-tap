@@ -2,20 +2,20 @@
 class Grm < Formula
     desc  "Minimalist npm registry manager (Use like Nrm)"
     homepage  "https://github.com/modern-magic/grm"
-    version "0.4.1"
+    version "0.5.0"
 
     on_macos do 
         if Hardware::CPU.intel?
-            url "https://github.com/modern-magic/grm/releases/download/v0.4.1/grm-darwin-64.tar.gz"
-            sha256  "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+            url "https://github.com/modern-magic/grm/releases/download/v0.5.0/grm-darwin-64.tar.gz"
+            sha256  "cde83f98f7b47617e52d9d0dd443c298927c3eff498c2846c72706db4059bf23"
 
             def install
                 bin.install "grm"
             end
         end
         if Hardware::CPU.arm?
-            url "https://github.com/modern-magic/grm/releases/download/v0.4.1/grm-darwin-arm64.tar.gz"
-            sha256  "0475cec11b41fac1592ad4a9d7cfbbb2b8e4251823bf40d8f6eb5b2bb32a81c4"
+            url "https://github.com/modern-magic/grm/releases/download/v0.5.0/grm-darwin-arm64.tar.gz"
+            sha256  "6c9f5d7157c7caa46b223d1b590134b1a8abf96526c487e07d4cbb347051dd4f"
             
             def install
                 bin.install "grm"
