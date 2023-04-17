@@ -2,20 +2,20 @@
 class Grm < Formula
     desc  "Minimalist npm registry manager (Use like Nrm)"
     homepage  "https://github.com/modern-magic/grm"
-    version "0.8.0"
+    version "0.9.0"
 
     on_macos do
         if Hardware::CPU.intel?
-            url "https://github.com/modern-magic/grm/releases/download/v0.8.0/grm-darwin-64.tar.gz"
-            sha256  "820D2B0AB0BA97F5E243E5819BDCD73537801F2882E78F8FFA87AE32673E9425"
+            url "https://github.com/modern-magic/grm/releases/download/v0.9.0/grm-darwin-64.tar.gz"
+            sha256  "79b895344790ea3989e89ad857d314774acc6243338a4466e8883c5f611ab81f"
 
             def install
                 bin.install "grm"
             end
         end
         if Hardware::CPU.arm?
-            url "https://github.com/modern-magic/grm/releases/download/v0.8.0/grm-darwin-arm64.tar.gz"
-            sha256  "AF9763A5E0FBBB3091031534EB1892DB53EAB8D95629EDD51814D46FF67BE966"
+            url "https://github.com/modern-magic/grm/releases/download/v0.9.0/grm-darwin-arm64.tar.gz"
+            sha256  "f0272a76dff7370985221756f307b52e2b05ec7abed9cc453ba77e55214a7452"
 
             def install
                 bin.install "grm"
@@ -25,16 +25,16 @@ class Grm < Formula
 
     on_linux do
         if  Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-            url "https://github.com/modern-magic/grm/releases/download/v0.8.0/grm-linux-arm64.tar.gz"
-            sha256  "513993A353F5C9E340288AD5CD67EB870FFAD159B2181889DC34D809C9ACD3A2"
+            url "https://github.com/modern-magic/grm/releases/download/v0.9.0/grm-linux-arm64.tar.gz"
+            sha256  "a465cc6657eaf69e20765d9197fa8469a7770b781b0d9b7db512db5434efeb60"
 
             def install
                 bin.install "grm"
             end
         end
         if  Hardware::CPU.intel?
-            url "https://github.com/modern-magic/grm/releases/download/v0.8.0/grm-linux-64.tar.gz"
-            sha256  "3C0C6D1044EF289036C4C9E48D6B4232F90029F50AD7C661C0BAD5EFC49883C6"
+            url "https://github.com/modern-magic/grm/releases/download/v0.9.0/grm-linux-64.tar.gz"
+            sha256  "8e3aa0e8a745fdb3cc734f2013d9cdb8cc4b429e47d808b7e4f0b7790861052d"
 
             def install
                 bin.install "grm"
